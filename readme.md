@@ -1,3 +1,6 @@
+# Otázky ke zkoužce
+
+
 # Biologické a akustické signály - úvod a opakování
 
 ## Teoretické
