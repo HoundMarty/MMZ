@@ -1,0 +1,7 @@
+Popis jednotlivých souborů:
+
+eegplot.m ... funkce na editaci vícekanálových záznamů v Matlabu (pochází z balíku EEGLAB)
+fastif.m ... pomocná funkce eegplot.m
+epi1.mat ... záznam 19 kanálů EEG pacienta během epileptického záchvatu. V záznamu jsou patrné pohybové složky způsobené křečí. Fs = 512 Hz.
+SSVEP1_14Hz.mat ... Záznam 128 kanálů EEG osoby pozorující blikající objekt, který bliká frekvencí 14 Hz. Záznam tedy obsahuje SSVEP, což je však z běžné spektrální analýzy sotva patrné (spíše vůbec). Rozmístění elektrod na hlavě osoby je znázorněno v souboru layout_Biosemi_cap_128ch.jpg. Data poskytl RIKEN institut v Tokiu.
+SubC_6chan_2LR_s5.mat ... Typická data sloužící k trénování a testování systémů BCI (Brain-Computer Interface). Obsahují 90 šesti-kanálových EEG záznamů (proměnná EEGDATA). Každý záznam byl proveden během imaginárního pohybu (tedy osoba si představovala, že provádí pohyb, ale pohyb skutečně neprováděla) levé nebo pravé ruky (viz hodnoty v proměnné LABELS). BCI systém se musí naučit tato data správně rozlišovat.

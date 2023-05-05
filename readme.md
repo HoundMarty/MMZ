@@ -5,16 +5,16 @@
 
 ### Teoretické
 
-1. Jaký je původ biosignálů a co je akční potenciál buňky?
-2. Uveďte příklady pravidelných a nepravidelných biosignálů.
-3. Které technické parametry biosignálů a měřící technicky jsou pro zpracování určující?
-4. Jaké třídy filtrů jsou realizovatelné?
-5. Které filtry mají (zobecněnou) lineární fázi a za jakých okolností tuto vlastnost filtru požadujeme?
+1. [Jaký je původ biosignálů a co je akční potenciál buňky?](otazky\1T1.md)
+2. [Uveďte příklady pravidelných a nepravidelných biosignálů.](otazky\1T2.md)
+3. [Které technické parametry biosignálů a měřící technicky jsou pro zpracování určující?](otazky\1T3.md)
+4. [Jaké třídy filtrů jsou realizovatelné?](otazky\1T4.md)
+5. [Které filtry mají (zobecněnou) lineární fázi a za jakých okolností tuto vlastnost filtru požadujeme?](otazky\1T5.md)
 
 ### Praktické:
 
-1. Odstranění plovoucí stejnosměrné složky v signálu pomocí filtru. Popište princip. Jaký filtr je vhodné zvolit?
-2. Odstranění harmonických složek pomocí filtru. Popište postup. Jaký filtr je vhodné zvolit?
+1. [Odstranění plovoucí stejnosměrné složky v signálu pomocí filtru. Popište princip. Jaký filtr je vhodné zvolit?](otazky\1P1.md)
+2. [Odstranění harmonických složek pomocí filtru. Popište postup. Jaký filtr je vhodné zvolit?](otazky\1P2.md)
 
 
 ## Kvadratická kritéria pro porovnávání signálů
