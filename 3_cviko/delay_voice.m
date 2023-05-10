@@ -3,6 +3,14 @@ close all
 clc
 
 %%
+% Použijte data v souboru delayedvoice.mat.
+
+% 1) Najděte kauzální nebo nekauzální filtr, který filtrováním signálu x dává signál co nejvíce podobný signálu d. Filtr spočítejte řešením soustavy lineárních rovnic a potom pomocí Levinson-Durbinova algoritmu (funkce miso_firwiener.m). Filtr počítejte z celých dat.
+
+% 2) Simulujte jiný typ pozorování x, který vznikne degradací signálu d. Příklad: přičtení bílého šumu, přičtení úzkopásmového šumu/harmonického signálu.
+
+% 3) Vyhodnoťte poměr signál/šum (SNR) před a po zpracování signálu x filtrem.
+%%
 load('C:\Users\98653\Documents\Skola\2_rocnik\LS\NMZ\3_cviko\delayedvoice.mat')
 
 

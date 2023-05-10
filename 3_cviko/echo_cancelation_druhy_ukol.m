@@ -2,6 +2,9 @@ clear all
 close all
 clc
 
+%% zadání
+% V souboru echocancelation.mat je signál mic, který simuluje záznam mužského hlasu na mikrofonu rušený jiným hlasem (ženským). V proměnné ref je referenční signál ženského hlasu. Použijte LMS filtr k potlačení ženského hlasu v záznamu mužského hlasu.
+
 %%
 load('echocancelation.mat')
 
