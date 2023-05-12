@@ -1,14 +1,3 @@
-## Biologické a akustické signály - úvod a opakování
-
-### Praktické:
-
-1. Odstranění plovoucí stejnosměrné složky v signálu pomocí filtru. Popište princip. Jaký filtr je vhodné zvolit?
-
-----
-
-Jak na to: Navrhněte vhodný high-pass filtr s lineární fází s přechodovou frekvencí 2 Hz a aplikujte ho na signál.
-
-```matlab
 clear *
 close all
 clc
@@ -68,5 +57,3 @@ title("Butterworth (nelineární fáze – bez kompenzace zpoždění)");
 
 % Filtr s nelineární fází není vhodný pro EKG, protože změní tvar
 % v časové oblasti.
-
-```

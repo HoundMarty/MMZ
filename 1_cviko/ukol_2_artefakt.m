@@ -1,15 +1,3 @@
-
-## Biologické a akustické signály - úvod a opakování
-
-### Praktické:
-
-2. Odstranění harmonických složek pomocí filtru. Popište postup. Jaký filtr je vhodné zvolit?
-
-----
-
-Jak na to: První možnost je, že signál transformujete pomocí FFT, vynulujete nežádoucí složky (symetricky tj. aby bylo spektrum symetrické) a signál rekonstruujete pomocí inverzní FFT. Druhou možností je, že navrhnete NOTCH filtry pro vybrané harmonické složky a signál jimi přefiltrujete.
-
-```matlab
 clear *
 close all
 clc
@@ -68,5 +56,3 @@ title("Zfiltrované FFT");
 
 figure; plot(x); hold on; plot(y);
 legend(["Originál", "Zfiltrovaný"]);
-
-```
