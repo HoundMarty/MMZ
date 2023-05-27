@@ -15,29 +15,24 @@ clc
 %% řešení
 load('multichannel.mat')
 %počet senzorů
-m = 9;
+senzor_count = 9;
 %vzdálenost mezi senzory | pozor na jednotky
 d = 0.1; % v cm
 %rychlost šíření signálu m/s
 c = 320;
 %pozice senzorů
-Pos = [(-(m-1)/2:(m-1)/2)*d; zeros(1,m); zeros(1,m)]; %[x,y]
+Pos = [(-(senzor_count-1)/2:(senzor_count-1)/2)*d; zeros(1,senzor_count); zeros(1,senzor_count)]; %[x,y]
 
-%f 
 f = 3400;
-% Delay??
-D = zeros(m,1);
-
-% theta
 theta = 0:0.01:2*pi;
 
 PSI = zeros(length(theta),1);
 
-%M_k
-M = [];
+D = [];
+M = zeros(senzor_count,1);
 for k=1:length(theta)
     u = -[cos(theta(k)) -sin(theta(k)) 0]';
-    M = (u'*Pos/c*fs)';
+    D = (u'*Pos/c*fs)';
     PSI(k) = mean(exp(1i*f/fs*2*pi*(D-M)));
 end
 
