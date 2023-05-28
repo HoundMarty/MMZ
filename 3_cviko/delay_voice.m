@@ -11,7 +11,7 @@ clc
 
 % 3) Vyhodnoťte poměr signál/šum (SNR) před a po zpracování signálu x filtrem.
 %%
-load('C:\Users\98653\Documents\Skola\2_rocnik\LS\NMZ\3_cviko\delayedvoice.mat')
+load('C:\Users\98653\Documents\Skola\2_rocnik\LS\NMZ\NMZ\3_cviko\delayedvoice.mat')
 
 
 %%

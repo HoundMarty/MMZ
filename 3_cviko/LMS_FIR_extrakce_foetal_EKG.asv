@@ -1,0 +1,58 @@
+clear all
+close all
+clc
+
+%%
+% V souboru foetalECG.mat je záznam EKG těhotné ženy. 
+% Signály 2 až 6 jsou z abdominální oblasti, zatímco signály 7 až 9 jsou z oblasti hrudní.
+% Pomocí LMS najděte filtr, kterým z vybraného EKG kanálu z abdominální 
+% oblasti odečtete vybraný signál z oblasti hrudní. 
+% Výsledkem by měl být vyčištěný záznam fetálního EKG.
+
+%%
+load('C:\Users\98653\Documents\Skola\2_rocnik\LS\NMZ\NMZ\3_cviko\foetalECG.mat')
+
+% abdominal = foetal_ecg(:,2:6).';
+% hrudni = foetal_ecg(:,7:9).';
+
+x = foetal_ecg.';
+
+eegplot(x);
+
+L = 100;
+
+h = miso_firwiener(L-1,hrudni.',abdominal(:,3:5).');
+h = reshape(h, L, []);
+
+mother = filter(h(:, 1), 1, x(6, :)) + filter(h(:, 2), 1, x(7, :)) + filter(h(:, 3), 1, x(8, :));
+
+foetal = x(1) - mother;
+
+eegplot([foetal; x(1, :)]);
+
+%%
+
+clc
+close all;
+clear all;
+
+load("foetalECG.mat");
+
+x = foetal_ecg(:, 2 : 9).';
+% 1–5 abdominální (víc fetus, míň matky)
+% 6–8 hrudní (převaha matka, skoro žádný fetus)
+
+eegplot(x);
+
+% lineární model šíření bez zpoždění a odrazů
+
+N = 100;
+L = N + 1;
+h = miso_firwiener(N, x(6:8, :).', x(1, :).');
+h = reshape(h, L, []);
+
+mother = filter(h(:, 1), 1, x(6, :)) + filter(h(:, 2), 1, x(7, :)) + filter(h(:, 3), 1, x(8, :));
+
+foetal = x(1) - mother;
+
+eegplot([foetal; x(1, :)]);

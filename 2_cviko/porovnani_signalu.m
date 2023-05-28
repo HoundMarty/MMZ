@@ -3,7 +3,7 @@ close all;
 clear *;
 clc;
 %%
-load('C:\Users\98653\Documents\Skola\2_rocnik\LS\NMZ\2_cviko\SSVEP1_14Hz.mat')
+load('C:\Users\98653\Documents\Skola\2_rocnik\LS\NMZ\NMZ\2_cviko\SSVEP1_14Hz.mat')
 
 % C_ij = mean(EEGdata-mean(EEGdata)*EEGdata-mean(EEGdata));
 %%

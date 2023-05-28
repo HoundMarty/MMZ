@@ -3,6 +3,13 @@ close all
 clc
 
 addpath("l1magic-1.11\l1magic\Optimization\");
+
+%%
+
+% Rekonstruujte obrázek o velikosti 65x97 bodů z jeho komprimovaného
+% záznamu y v souboru ukol2.mat. Vzorkující transformace je dána maticí A. 
+% Z numerického formátu uint8 převeďte A do formátu double.
+
 %% 
 load('ukol2.mat')
 

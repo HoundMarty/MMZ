@@ -1,4 +1,18 @@
 clear *
+close all
+clc
+%%
+
+% Spusťte si přiložený soubor v Maltabu. Jedná se o názornou ukázku 
+% adaptace filtru pomocí LMS algoritmu. Cílovým signálem je náhodný signál d. 
+% Vstupním signálem je x, který je roven zpožděnému signálu d o delay vzorků s přičteným 
+% šumem, jehož intenzita se reguluje parametrem sigma. Rychlost adaptace se řídí parameterm mu.
+
+% Vyzkoušejte si skript s různými hodnotami parametrů sigma a mu. 
+
+% Řešte stejný problém pomocí algoritmu RLS.
+
+%%
 N = 10000;
 
 d = randn(N,1);

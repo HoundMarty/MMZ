@@ -2,6 +2,16 @@ clear *
 close all
 clc
 
+%%
+% Vygenerujte řídký signál x délky 1000 s volitelným počtem nenulových koeficientů S (10 až 800). 
+% K signálu můžete případně přičíst i malé množství šumu, aby nebyl v pravém slova smyslu řídký.
+% Vygenerujte náhodnou ortogonální matici U s pomocí příkazu orth.
+% Pomocí U navzorkujte komprimovaný signál x do proměnné y.
+% Rekonstruujte signál x z jeho komprimovaného záznamu y pomocí:
+% metody Orthogonal Matching Pursuit (OMP.m) 
+% pomocí metod z balíku l1-magic (http://users.ece.gatech.edu/~justin/l1magic/)
+
+%%
 N = 1000;
 S = 10;
 C = randi([S,N],1);
